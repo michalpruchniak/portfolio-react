@@ -1,10 +1,5 @@
-import html5 from './svg/html5.svg'
-import css3 from './svg/css3.svg'
-import javascript from './svg/javascript.svg'
-import react from './svg/react.svg'
-import redux from './svg/redux.svg'
-import bootstrap from './svg/bootstrap.svg'
-import sass from './svg/sass.svg'
+import Github from './svg/github.svg'
+
 
 import { useEffect, useRef } from 'react';
 import gsap from 'gsap'
@@ -20,13 +15,7 @@ const Skills = () => {
     })
     return(
         <div className="skills__icons" ref={wrapper}>
-            <img src={html5} />
-            <img src={css3} />
-            <img src={javascript} />
-            <img src={bootstrap} />
-            <img src={sass} />
-            <img src={react} />
-            <img src={redux} />
+            <img src={Github} />
         </div>
     );
 }

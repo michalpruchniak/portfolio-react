@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react'
 import SkillsNav from './nav'
 import  Frontend from './Frontend'
+import  Backend from './Backend'
+import  Other from './Other'
 import { useState } from 'react';
 
 function App(props) {
@@ -17,8 +19,11 @@ function App(props) {
         <div className="allSkills">
             <h2 className="sectionHeader sectionHeader--skills">Skills</h2>
             <SkillsNav active={skill} checkSkills={checkSkills} />
-            {skill === 'Frontend' ? <Frontend /> : ''}
-            {skill === 'Backend' ? 'Backend' : ''}
+            <div className="skills__container">
+                {skill === 'Frontend' ? <Frontend /> : ''}
+                {skill === 'Backend' ? <Backend /> : ''}
+                {skill === 'Other' ? <Other /> : ''}
+            </div>
         </div>
     );
 }
