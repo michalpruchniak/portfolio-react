@@ -81,6 +81,11 @@ svg{
 .skills__menu{
   position: relative;
 }
+
+.skills__menu li {
+  cursor: pointer;
+}
+
 .skills__menu .marker{
   position: absolute;
   left: 0;

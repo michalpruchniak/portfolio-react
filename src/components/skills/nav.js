@@ -3,9 +3,10 @@ import { useEffect } from "react";
 const SkillsNav = (props) => {
 
     useEffect(() => {
+        const link = document.querySelector('.skills__menu li');
+        const marker = document.querySelector('.marker');
 
-        if(props.active != null){
-            let link = document.querySelector('.skills__menu li');
+        if(props.active != null && link.offsetLeft != marker.offsetLeft){
 
             indicator(link, props.active)
         }
@@ -17,6 +18,7 @@ const SkillsNav = (props) => {
         marker.style.width = e.offsetWidth + "px"
 
         props.checkSkills(category)
+        console.log(e.offsetLeft);
     }
     return(
         <nav className="skills__menu">
