@@ -16,7 +16,7 @@ const Img = () => {
         const tl = gsap.timeline({ defaults: { ease: 'Sine.easeOut', duration: .6 } })
 
         tl.fromTo(elements, {x: '+=100', autoAlpha: 0 }, { x: '-=100', autoAlpha: 1, duration: .9 })
-        .fromTo(person, { autoAlpha: 0, x: '-=200' }, { x: '+=200', autoAlpha: 1, duration: .8 })
+        .fromTo(person, { autoAlpha: 0, x: '-=200'}, { x: '+=200', autoAlpha: 1, duration: .8 })
         .fromTo(line1, { width: '0' }, { width: '59.430492', duration: 0.8, ease: 'Power1.easeIn' }, 0.8)
         .fromTo(line2, { width: '0' }, { width: '59.430492', duration: 1.2, ease: 'Expo.easeIn' }, 0.4)
         .fromTo(line3, { width: '0' }, { width: '59.430492', duration: 1, ease: 'Power1.easeIn'} , 0.3)

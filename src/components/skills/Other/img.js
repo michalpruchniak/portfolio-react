@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { ReactComponent as CodeThinking } from './svg/code_thinking2.svg';
+import { ReactComponent as Learning } from './svg/learning.svg';
 import gsap from 'gsap'
 
 const Img = () => {
@@ -25,7 +25,7 @@ const Img = () => {
 
     return(
     <div ref={wrapper}>
-            <CodeThinking />
+            <Learning />
     </div>
     );
 }
