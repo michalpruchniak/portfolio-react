@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { ReactComponent as CodeThinking } from './svg/code_thinking2.svg';
+import { ReactComponent as CodeThinking } from './svg/codeThinking.svg';
 import gsap from 'gsap'
 
 const Img = () => {

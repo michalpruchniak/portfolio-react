@@ -20,13 +20,13 @@ const Skills = () => {
     })
     return(
         <div className="skills__icons" ref={wrapper}>
-            <img src={html5} />
-            <img src={css3} />
-            <img src={javascript} />
-            <img src={bootstrap} />
-            <img src={sass} />
-            <img src={react} />
-            <img src={redux} />
+            <img src={html5} alt="html5"/>
+            <img src={css3} alt="css3" />
+            <img src={javascript} alt="javascript"/>
+            <img src={bootstrap} alt="bootstrap"/>
+            <img src={sass} alt="sass" />
+            <img src={react} alt="react" />
+            <img src={redux} alt="redux" />
         </div>
     );
 }

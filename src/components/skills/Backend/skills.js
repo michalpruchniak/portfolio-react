@@ -18,10 +18,10 @@ const Skills = () => {
     })
     return(
         <div className="skills__icons" ref={wrapper}>
-            <img src={PHP} />
-            <img src={Mysql} />
-            <img src={Laravel} />
-            <img src={Codeigniter} />
+            <img src={PHP} alt="php" />
+            <img src={Mysql} alt="mysql"/>
+            <img src={Laravel} alt="laravel" />
+            <img src={Codeigniter} alt="codeigniter" />
         </div>
     );
 }

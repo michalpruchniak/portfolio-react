@@ -15,7 +15,7 @@ const Skills = () => {
     })
     return(
         <div className="skills__icons" ref={wrapper}>
-            <img src={Github} />
+            <img src={Github} alt="github" />
         </div>
     );
 }
