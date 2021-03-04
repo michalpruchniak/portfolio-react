@@ -106,12 +106,30 @@ svg{
 
 .skills__icons {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 100px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
   justify-items: center;
 }
 
 .skills__icons > img {
-  height: 80px;
+  height: 50px;
   visibility: hidden;
+}
+
+@media(min-width: 450px){
+  .skills__icons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .skills__icons > img {
+  height: 60px;
+}
+}
+
+@media(min-width: 1010px){
+  .skills__icons{
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .skills__icons > img {
+    height: 80px;
+  }
 }
