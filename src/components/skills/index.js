@@ -12,11 +12,16 @@ function App(props) {
         setSkill(skill)
     }
     useEffect(() => {
-        setSkill(props.skills)
+            setSkill(props.skills)
+            console.log(props.skills)
+
+
+
     }, [props.skills])
 
+
     return (
-        <div className="allSkills">
+        <section className="skills">
             <h2 className="sectionHeader sectionHeader--skills">Skills</h2>
             <SkillsNav active={skill} checkSkills={checkSkills} />
             <div className="skills__container">
@@ -24,7 +29,7 @@ function App(props) {
                 {skill === 'Backend' ? <Backend /> : ''}
                 {skill === 'Other' ? <Other /> : ''}
             </div>
-        </div>
+        </section>
     );
 }
 
