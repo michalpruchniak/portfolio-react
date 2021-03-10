@@ -13,7 +13,6 @@ function App(props) {
     }
     useEffect(() => {
             setSkill(props.skills)
-            console.log(props.skills)
 
 
 
