@@ -47,12 +47,12 @@ function Main() {
   return (
     <div className="App">
       <div className="hello"></div>
-      <Container>
+      <div className="row">
         <Projects projects={projects} />
 
         <Skills skills={skills} />
 
-      </Container>
+      </div>
       <div className="hello"></div>
 
     </div>

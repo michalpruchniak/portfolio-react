@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import Single from './single'
+
 import ewidencja1 from './img/ewidencja1.jpg'
 
 
@@ -19,8 +20,18 @@ function App(props) {
         <section className="projects">
             <h2 className="sectionHeader">Projects</h2>
             <div className="projects__list" ref={wrapper}>
-                <Single img={ewidencja1} />
-                <Single img={ewidencja1} />
+                <Single
+                    color="first"
+                    img={ewidencja1}
+                    title="Ewidence"
+                    github="https://github.com/michalpruchniak/Ewidencja"
+                />
+                <Single
+                    color="second"
+                    img={ewidencja1}
+                    title="Portfolio"
+                    github="https://github.com/michalpruchniak/portfolio-react"
+                />
             </div>
         </section>
     );

@@ -5,6 +5,9 @@ body{
 h1, h2, h3, h4, h5 {
   font-family: 'EB Garamond', serif;
 }
+.row{
+  width: 100%;
+}
 .sectionHeader {
   text-align: center;
   font-size: 46px;
@@ -113,7 +116,7 @@ svg{
   }
 }
 
-.projects__list {
+/* .projects__list {
   display: grid;
   width: 100%;
   height: 100%;
@@ -133,26 +136,64 @@ svg{
 .projects__single{
   position: relative;
   visibility: hidden;
-  display: block;
-  position: relative;
   width: 250px;
   height: 150px;
+  border: 1px solid #000;
   background-size: cover;
 }
 .projects__single--shadow{
   position: absolute;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
+  color: #FFF;
   width: 0px;
   height: 0px;
   margin: auto;
   top: 0; left: 0; bottom: 0; right: 0;
 }
-.projects__single--shadow>a{
+.projects__single--shadow > h5{
   visibility: hidden;
-  display: inline-block;
-  width: 80px;
-  height: 22px;
-  font-size: 17px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+} */
+
+.projects__single {
+  visibility: hidden;
+  display: flex;
+  height: 400px;
+}
+.projects__cover {
+  width: 50%;
+}
+.projects__details {
   color: #FFF;
+  width: 50%;
+}
+.projects__cover{
+  display: flex;
+  justify-items: center;
+}
+.projects__cover > img{
+  width: 50%;
+  display: block;
+  margin: auto;
+}
+.projects__single--first > .projects__cover {
+  background-color: #43AA8B;
+}
+.projects__single--first > .projects__details {
+  background-color: #39856E;
+}
+.projects__single--second > .projects__cover {
+  /* background-color: #51AEC1; */
+  background-color: #3B7C89;
+
+}
+.projects__single--second > .projects__details {
+  order: -1;
+  /* background-color: #3B7C89; */
+  background-color: #51AEC1;
+
 }
