@@ -9,8 +9,8 @@ function Single(props){
                 <img src={props.img} />
             </div>
             <div className="projects__details">
-                <h5>Hello World</h5>
-                <p>Lorem ipsum</p>
+                <h3>{props.title}</h3>
+                <p>{props.description}</p>
             </div>
         </div>
 

@@ -4,6 +4,7 @@ body{
 }
 h1, h2, h3, h4, h5 {
   font-family: 'EB Garamond', serif;
+  margin: 0;
 }
 .row{
   width: 100%;
@@ -14,6 +15,12 @@ h1, h2, h3, h4, h5 {
   font-weight: bold;
 }
 
+.skills {
+  background-color: #c8e6c9;
+  margin: 0;
+  padding: 0;
+  height: 500px;
+}
 .skills__menu a {
     text-decoration: none;
     color: rgb(185, 42, 42)
@@ -179,6 +186,10 @@ svg{
   width: 50%;
   display: block;
   margin: auto;
+}
+.projects__details > h3 {
+  text-align: center;
+  font-size: 28px;
 }
 .projects__single--first > .projects__cover {
   background-color: #43AA8B;

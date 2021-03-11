@@ -24,12 +24,14 @@ function App(props) {
                     color="first"
                     img={ewidencja1}
                     title="Ewidence"
+                    description="description"
                     github="https://github.com/michalpruchniak/Ewidencja"
                 />
                 <Single
                     color="second"
                     img={ewidencja1}
                     title="Portfolio"
+                    description="description"
                     github="https://github.com/michalpruchniak/portfolio-react"
                 />
             </div>
