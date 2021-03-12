@@ -1,17 +1,23 @@
 import { Container } from 'react-grid-system'
 import Skills from './components/skills/index'
 import Projects from './components/projects/index'
+import Parallax from './components/parallax/index'
 import './App.css';
 import { useState, useEffect } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function Main() {
   const [skills, setSkills] = useState(false)
   const [projects, setProjects] = useState('')
 
   useEffect(() => {
-    setInterval(function () { console.log(projects); }, 1000);
     gsap.registerPlugin(ScrollTrigger);
 
 
@@ -46,15 +52,13 @@ function Main() {
 
   return (
     <div className="App">
-      <div className="hello"></div>
       <div className="row">
+        <Parallax />
         <Projects projects={projects} />
-
         <Skills skills={skills} />
 
       </div>
       <div className="hello"></div>
-
     </div>
   );
 }

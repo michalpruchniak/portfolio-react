@@ -12,6 +12,7 @@ function App () {
     return (
         <Router>
             <Switch>
+
                 <Route path="/projects">
                     <Projects />
                 </Route>
