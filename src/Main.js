@@ -38,7 +38,7 @@ function Main() {
       scrollTrigger: {
         trigger: '.projects',
         once: true,
-        start: 'top 20%',
+        start: 'top 40%',
         markers: { startColor: "green", endColor: "yellow", fontSize: "12px" },
         onUpdate: () => {
             setProjects(true)
