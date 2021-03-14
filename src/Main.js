@@ -16,6 +16,7 @@ import {
 function Main() {
   const [skills, setSkills] = useState(false)
   const [projects, setProjects] = useState('')
+  const [parallax, setParallax] = useState(false)
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -41,8 +42,17 @@ function Main() {
         markers: { startColor: "green", endColor: "yellow", fontSize: "12px" },
         onUpdate: () => {
             setProjects(true)
-
-
+        }
+      }
+    })
+    gsap.to('section', {
+      scrollTrigger: {
+        trigger: '.parallax',
+        once: true,
+        start: 'top 20%',
+        markers: { startColor: "green", endColor: "yellow", fontSize: "12px" },
+        onUpdate: () => {
+            setParallax(true)
         }
       }
     })
@@ -53,7 +63,7 @@ function Main() {
   return (
     <div className="App">
       <div className="row">
-        <Parallax />
+        <Parallax parallax={parallax} />
         <Projects projects={projects} />
         <Skills skills={skills} />
 
