@@ -59,8 +59,10 @@ function Parallax(props){
     }, [props.parallax])
     return(
         <section className="parallax">
-            <h1 className="main__header"></h1>
-            <h2 className="main__second"></h2>
+            <div className="main__headers">
+                <h1 className="main__header"></h1>
+                <h2 className="main__second"></h2>
+            </div>
             <img src={bg} id="bg" />
             <img src={planet} id="planet"/>
             <img src={claud} id="claud1" />
