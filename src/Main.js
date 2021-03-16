@@ -3,6 +3,7 @@ import Skills from './components/skills/index'
 import Projects from './components/projects/index'
 import Parallax from './components/parallax/index'
 import About from './components/about/index'
+import Contact from './components/contact/index'
 import './App.css';
 import { useState, useEffect } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -74,9 +75,9 @@ function Main() {
         <About about={about} />
         <Projects projects={projects} />
         <Skills skills={skills} />
+        <Contact />
 
       </div>
-      <div className="hello"></div>
     </div>
   );
 }

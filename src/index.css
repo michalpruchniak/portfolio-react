@@ -119,7 +119,7 @@ section{
 }
 .skills {
   margin: 0;
-  height: 500px;
+  height: 600px;
   background-color: #A499B3;
 
 
@@ -235,6 +235,14 @@ svg{
   padding: 5px;
 }
 
+.contact {
+  background-color: #1d1a1a;
+  color: #d4d4d4;
+  min-height: 300px;
+}
+.contact > h2{
+  text-align: center;
+}
 @media(min-width: 450px){
   .projects__single {
     width: 248px;
