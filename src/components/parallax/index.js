@@ -49,9 +49,9 @@ function Parallax(props){
                     scrub: true,
 
                 },
-                x: -1500,
+                x: -2500,
                 y: 4000,
-                scale: 3
+                scale: 2
             })
             gsap.to(".main__header", {duration: 2, delay: 1, text: "Michal Pruchniak"})
             gsap.to(".main__second", {duration: 3, delay: 3, text: "Front-end developer"})
