@@ -28,7 +28,6 @@ function Main() {
         trigger: '.App',
         once: true,
         start: '100px top',
-        markers: { startColor: "green", endColor: "yellow", fontSize: "12px" },
         onToggle: self => setMainmenu(self.isActive),
         onUpdate: () => {
           setMainmenu(true)
@@ -89,7 +88,7 @@ function Main() {
       <div className="row">
         <Nav
           mainmenu={mainmenu}
-          scrollToEl={(el) => { scrollToElement(el) }}
+          scrollToEl={(el) => { scrollToElement(el, {offset: -73}) }}
         />
         <Parallax parallax={parallax} />
         <About about={about} />
