@@ -37,15 +37,17 @@ h2{
   width: 100%;
   z-index: 99999999;
   height: 73px;
-  /* background-color: chocolate; */
+  transition: .5s;
 
+}
+.main__nav--active{
+  background-color: #ececec;
 }
 .main__nav > ul {
     position: absolute;
     right: 0;
     display: flex;
     margin: 0;
-    /* background-color: chartreuse; */
 }
 .main__nav > ul > li {
   display: block;

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Nav(props) {
     return(
-        <nav className="main__nav">
+        <nav className={`main__nav ${props.mainmenu ? "main__nav--active" : ""}`}>
             <ul>
                 <li onClick={() => { props.scrollToEl('.parallax')}}>Home</li>
                 <li onClick={() => { props.scrollToEl('.about')}}>About me</li>
