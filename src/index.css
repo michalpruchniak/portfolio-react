@@ -32,6 +32,26 @@ h2{
   z-index: 5000;
   text-align: center;
 }
+.main__nav {
+  position:fixed;
+  width: 100%;
+  z-index: 99999999;
+  height: 73px;
+  /* background-color: chocolate; */
+
+}
+.main__nav > ul {
+    position: absolute;
+    right: 0;
+    display: flex;
+    margin: 0;
+    /* background-color: chartreuse; */
+}
+.main__nav > ul > li {
+  display: block;
+  list-style-type: none;
+  padding: 25px;
+}
 section{
   position: relative;
   overflow: hidden;
@@ -89,7 +109,7 @@ section{
 .about{
   position: relative;
   color: #d4d4d4;
-  min-height: 55vh;
+  min-height: 500px;
 }
 .about::after {
   content: '';

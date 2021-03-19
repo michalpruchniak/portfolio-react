@@ -19,7 +19,6 @@ const SkillsNav = (props) => {
         marker.style.width = e.offsetWidth + "px"
 
         props.checkSkills(category)
-        console.log(e.offsetLeft);
     }
     return(
         <nav className="skills__menu">

@@ -20,7 +20,7 @@ function App(props) {
 
 
     return (
-        <section className="skills">
+        <section className="skills" id="skills2">
             <h2 className="sectionHeader sectionHeader--skills">Skills</h2>
             <SkillsNav active={skill} checkSkills={checkSkills} />
             <div className="skills__container">
