@@ -19,10 +19,10 @@ h1, h2, h3, h4, h5 {
   z-index: 1500;
 }
 h1{
-  font-size: 70px;
+  font-size: 60px;
 }
 h2{
-  font-size: 46px;
+  font-size: 30px;
 }
 .main__headers{
   position: absolute;
@@ -82,11 +82,13 @@ section{
   left: 230px;
   top: 150px;
   opacity: 0.6;
+  visibility: hidden;
 }
 #claud1{
   position: absolute;
   left: 20px;
   top: 190px;
+  visibility: hidden;
 }
 #claud2{
   position: absolute;
@@ -98,6 +100,7 @@ section{
   right: 30px;
   top: 130px;
   transform: scale(0.3);
+  visibility: hidden;
 }
 .row{
   width: 100%;
@@ -265,7 +268,7 @@ svg{
 .contact > h2{
   text-align: center;
 }
-@media(min-width: 450px){
+@media(min-width: 550px){
   .projects__single {
     width: 248px;
     height: 126px;
@@ -276,6 +279,21 @@ svg{
   .skills__icons > img {
     height: 60px;
   }
+  #planet {
+    visibility: visible;
+  }
+  #jet {
+    visibility: visible;
+  }
+  #claud1 {
+    visibility: visible;
+  }
+  h1{
+  font-size: 70px;
+}
+h2{
+  font-size: 46px;
+}
 }
 @media(min-width: 764px){
   .projects__single {
@@ -295,14 +313,4 @@ svg{
   .skills__icons > img {
     height: 80px;
   }
-}
-
-
-
-
-
-
-
-.example{
-  height: 100vh;
 }

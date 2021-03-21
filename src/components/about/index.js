@@ -14,8 +14,7 @@ function About(props){
     }, [props.about])
     return(
         <section className="about" >
-            {console.log('about')}
-            <h2>About me</h2>
+            <h2 className="sectionHeader">About me</h2>
             <Container className="description">
                 <p>dfsdf</p>
             </Container>
