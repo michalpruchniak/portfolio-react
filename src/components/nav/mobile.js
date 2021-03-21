@@ -1,3 +1,5 @@
+import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Mobilenav = (props) => {
     const closeMenu = () => {
         setTimeout(() => {
@@ -6,7 +8,7 @@ const Mobilenav = (props) => {
     }
     return(
         <div className="nav__mobile">
-            <i className="nav__mobile--close fas fa-times" onClick={closeMenu}></i>
+            <span className="nav__mobile--close"><FontAwesomeIcon icon={faTimes} onClick={closeMenu} /></span>
             <ul>
                 <li onClick={() => { props.scrollToEl('.parallax'); closeMenu() }}>Home</li>
                 <li onClick={() => { props.scrollToEl('.about'); closeMenu() }}>About me</li>

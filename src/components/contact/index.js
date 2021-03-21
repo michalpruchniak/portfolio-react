@@ -10,10 +10,8 @@ function Contact(){
                 <Row>
                     <Col sm={6}>
                         <p><b>mail</b>: mpruchniak(at)gmail.com</p>
-                        <p><b>phone:</b> 666 862 258</p>
                     </Col>
                     <Col sm={6}>
-                        <a href="#">Download CV</a>
                     </Col>
                 </Row>
             </Container>

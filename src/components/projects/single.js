@@ -1,4 +1,4 @@
-import {useEffect, useRef} from 'react'
+import {useRef} from 'react'
 import gsap from 'gsap'
 function Single(props){
     let project = useRef(null);

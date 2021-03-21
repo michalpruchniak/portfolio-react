@@ -5,16 +5,15 @@ import jet from './img/jet.png'
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import TextPlugin from 'gsap/TextPlugin'
 import gsap from 'gsap'
-import { useEffect, useRef } from 'react'
+import { useEffect } from 'react'
 
 
 function Parallax(props){
-    const wrapper = useRef(null);
 
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger, TextPlugin);
 
-        if(props.parallax == true){
+        if(props.parallax === true){
             gsap.to("#bg", {
                 scrollTrigger: {
                     scrub: true
@@ -63,11 +62,11 @@ function Parallax(props){
                 <h1 className="main__header"></h1>
                 <h2 className="main__second"></h2>
             </div>
-            <img src={bg} id="bg" />
-            <img src={planet} id="planet"/>
-            <img src={claud} id="claud1" />
-            <img src={claud} id="claud2" />
-            <img src={jet} id="jet" />
+            <img src={bg} id="bg" alt="background" />
+            <img src={planet} id="planet" alt="planet"/>
+            <img src={claud} id="claud1" alt="claud"/>
+            <img src={claud} id="claud2" alt="claud" />
+            <img src={jet} id="jet" alt="jet" />
         </section>
     );
 }

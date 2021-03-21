@@ -85,6 +85,7 @@ function Main() {
 
   return (
     <div className="App">
+
       <div className="row">
         <Mobilenav
           scrollToEl={(el) => { scrollToElement(el, { offset: -73 }) }}

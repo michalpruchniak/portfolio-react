@@ -65,11 +65,12 @@ h2{
   top: 0;
   background-color: rgba(255, 255, 255, 0.8);
   transition: .3s;
-  z-index: 9999999999999999999999999999;
+  z-index: 999999999999;
 
 }
 .nav__mobile--active{
   left: 0;
+
 }
 .nav__mobile > ul {
   margin-top: 100px;
@@ -331,7 +332,10 @@ svg{
   }
   .nav__classic{
     visibility: visible;
-}
+  }
+  .nav__mobile{
+    visibility: hidden;
+  }
 }
 
 @media(min-width: 1010px){
