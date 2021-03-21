@@ -28,10 +28,9 @@ function Main() {
         trigger: '.App',
         once: true,
         start: '100px top',
-        onToggle: self => setMainmenu(self.isActive),
-        onUpdate: () => {
+        onEnter: () => {
           setMainmenu(true)
-        }
+        },
       }
     })
     gsap.to('section', {
@@ -72,7 +71,7 @@ function Main() {
 
         start: 'top 20%',
         onEnter: () => {
-            setSkills('Frontend')
+            setSkills(true)
         }
       }
     })

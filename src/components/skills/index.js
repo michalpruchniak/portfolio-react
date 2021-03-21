@@ -7,14 +7,17 @@ import { useState } from 'react';
 
 function App(props) {
     const [skill, setSkill] = useState(null)
+    const [activated, setActivated] = useState(false)
 
     const checkSkills = skill => {
         setSkill(skill)
     }
     useEffect(() => {
-            setSkill(props.skills)
+        if(props.skills === true){
+            setSkill('Frontend')
+            setActivated(true)
 
-
+        }
 
     }, [props.skills])
 
