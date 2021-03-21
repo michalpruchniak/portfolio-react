@@ -4,6 +4,7 @@ import Parallax from './components/parallax/index'
 import About from './components/about/index'
 import Contact from './components/contact/index'
 import Nav from './components/nav/index'
+import Mobilenav from './components/nav/mobile'
 import './App.css';
 import { useState, useEffect, useRef } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger'
@@ -85,6 +86,9 @@ function Main() {
   return (
     <div className="App">
       <div className="row">
+        <Mobilenav
+          scrollToEl={(el) => { scrollToElement(el, { offset: -73 }) }}
+        />
         <Nav
           mainmenu={mainmenu}
           scrollToEl={(el) => { scrollToElement(el, {offset: -73}) }}

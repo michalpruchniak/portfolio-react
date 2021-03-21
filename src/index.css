@@ -54,6 +54,46 @@ h2{
   list-style-type: none;
   padding: 25px;
 }
+.nav__classic{
+  visibility: hidden;
+}
+.nav__mobile{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  left: -100vw;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: .3s;
+  z-index: 9999999999999999999999999999;
+
+}
+.nav__mobile--active{
+  left: 0;
+}
+.nav__mobile > ul {
+  margin-top: 100px;
+  list-style-type: none;
+  text-align: center;
+}
+.nav__mobile > ul > li {
+  margin-top: 25px;
+  font-weight: bold;
+  font-size: 25px;
+}
+.nav__mobile > ul > li:hover {
+  font-size: 29px;
+}
+.nav__hamburger {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.nav__mobile--close {
+  position: absolute;
+  right: 15px;
+  top: 25px;
+}
 section{
   position: relative;
   overflow: hidden;
@@ -279,27 +319,19 @@ svg{
   .skills__icons > img {
     height: 60px;
   }
-  #planet {
-    visibility: visible;
-  }
-  #jet {
-    visibility: visible;
-  }
-  #claud1 {
-    visibility: visible;
-  }
-  h1{
-  font-size: 70px;
-}
-h2{
-  font-size: 46px;
-}
+
 }
 @media(min-width: 764px){
   .projects__single {
     width: 305px;
     height: 155px;
   }
+  .nav__hamburger {
+    visibility: hidden;
+  }
+  .nav__classic{
+    visibility: visible;
+}
 }
 
 @media(min-width: 1010px){
@@ -312,5 +344,14 @@ h2{
   }
   .skills__icons > img {
     height: 80px;
+  }
+  #jet {
+    visibility:visible;
+  }
+  #claud1 {
+    visibility:visible;
+  }
+  #planet {
+    visibility:visible;
   }
 }
