@@ -6,7 +6,7 @@ import Contact from './components/contact/index'
 import Nav from './components/nav/index'
 import Mobilenav from './components/nav/mobile'
 import './App.css';
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import ScrollTrigger from 'gsap/ScrollTrigger'
 import gsap from 'gsap'
 import scrollToElement from 'scroll-to-element'

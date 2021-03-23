@@ -276,11 +276,11 @@ svg{
   visibility: hidden;
   width: 95%;
   height: 194px;
-  margin-right: 15px;
+  margin: 0 auto;
   margin-bottom: 20px;
+
   overflow: hidden;
   background-size: cover;
-  margin-bottom: 20px;
 }
 
 .projects__details{
@@ -311,8 +311,8 @@ svg{
 }
 @media(min-width: 550px){
   .projects__single {
-    width: 248px;
-    height: 126px;
+    width: 238px;
+    height: 116px;
   }
   .skills__icons {
     grid-template-columns: repeat(4, 1fr);
@@ -326,6 +326,7 @@ svg{
   .projects__single {
     width: 305px;
     height: 155px;
+    margin: 10px;
   }
   .nav__hamburger {
     visibility: hidden;
