@@ -3,7 +3,6 @@ import 'font-awesome/css/font-awesome.min.css';
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Nav(props) {
-
     const openMenu = () => {
         document.querySelector('.nav__mobile').classList.add("nav__mobile--active")
     }
