@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import Single from './single'
 
 import ewidencja1 from './img/ewidencja1.jpg'
+import portfolio1 from './img/portfolio1.jpg'
 import { Container } from 'react-grid-system';
 
 
@@ -23,17 +24,15 @@ function App(props) {
             <Container>
                 <div className="projects__list" ref={wrapper}>
                     <Single
-                        color="first"
                         img={ewidencja1}
                         title="Ewidence"
-                        description="description"
+                        live="http://mpruchniak.pl/ewidencja"
                         github="https://github.com/michalpruchniak/Ewidencja"
                     />
                     <Single
-                        color="second"
-                        img={ewidencja1}
+                        img={portfolio1}
                         title="Portfolio"
-                        description="description"
+                        live="http://mpruchniak.pl"
                         github="https://github.com/michalpruchniak/portfolio-react"
                     />
                 </div>

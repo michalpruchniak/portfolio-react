@@ -19,7 +19,10 @@ function Single(props){
             ref={project} onMouseEnter={displayDetails} onMouseLeave={hiddenDetails}>
                 <div className="projects__details">
                     <h3>{props.title}</h3>
-                    <p>{props.description}</p>
+                    <div className="projects__links">
+                        <a href={props.live}>Live</a>
+                        <a href={props.github}>Github</a>
+                    </div>
                 </div>
 
         </div>
