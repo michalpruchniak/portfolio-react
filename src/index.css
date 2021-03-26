@@ -24,6 +24,20 @@ h1{
 h2{
   font-size: 30px;
 }
+.loading{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1C273A;
+
+}
+.loading > img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-200px, -150px);
+
+}
 .main__headers{
   position: absolute;
   top: 50%;
